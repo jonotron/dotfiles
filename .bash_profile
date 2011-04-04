@@ -22,6 +22,8 @@ if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
     trap "kill $SSH_AGENT_PID" 0
 fi
 
+alias wget="curl -O"
+
 #### PS1 customization ####
 NONE="\[\033[0m\]"    # unsets color to term fg color
 
