@@ -79,11 +79,34 @@ set_new_pwd() {
 set_git_branch() {
     unset GIT_BRANCH
     local branch=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`;
-    
+
+
     if test $branch
         then
-            GIT_BRANCH="${K}[${M}$branch${K}]"
+            local tracking=`git branch -vv 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/' | awk '{print $3}' | sed -e '/^[^\[]/d'`;
+
+            track="";
+            if test $tracking
+            then
+                track="${W}(t)"
+                local behind=`git status | sed -ne "/Your branch is behind/p" | grep -oE "[0-9]+"`;
+                local ahead=`git status | sed -ne "/Your branch is ahead/p" | grep -oE "[0-9]+"`;
+                if test $behind
+                then
+                    track="${W}(${R}-$behind${W})";
+                fi
+                if test $ahead
+                then
+                    track="${W}(${G}+$ahead${W})";
+                fi
+            fi
+            GIT_BRANCH="${K}[${M}$branch$track${K}]"
     fi
+}
+
+is_git_branch_tracking() {
+    unset GIT_BRANCH_TRACKING
+    local tracking=`git branch -vv | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/' | awk '{print $3}' | sed -e '/^[^\[]/d'`;
 }
 
 # revision of the svn repo in the current directory
