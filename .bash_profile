@@ -89,8 +89,8 @@ set_git_branch() {
             if test $tracking
             then
                 track="${W}(t)"
-                local behind=`git status | sed -ne "/Your branch is behind/p" | grep -oE "[0-9]+"`;
-                local ahead=`git status | sed -ne "/Your branch is ahead/p" | grep -oE "[0-9]+"`;
+                local behind=`git status | sed -ne "/Your branch is behind/p" | grep -oE " [0-9]+ " | sed -e "s/ *//g"`;
+                local ahead=`git status | sed -ne "/Your branch is ahead/p" | grep -oE " [0-9]+ " | sed -e "s/ *//g"`;
                 if test $behind
                 then
                     track="${W}(${R}-$behind${W})";
