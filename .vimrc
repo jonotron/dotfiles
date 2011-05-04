@@ -5,6 +5,9 @@ filetype plugin on
 filetype indent on
 syntax on
 
+" Escape out of insert mode when jj is pressed
+imap jj <Esc>
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
