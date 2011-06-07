@@ -20,6 +20,7 @@ set smartindent
 set showmatch
 
 set splitbelow
+set splitright
 set ignorecase
 set smartcase
 
