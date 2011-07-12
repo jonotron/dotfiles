@@ -17,7 +17,7 @@ map <C-q> <C-w>q
 
 " NERDTree key mappings
 nmap ,n :NERDTreeToggle<CR>
-
+autocmd BufEnter * cd %:p:h
 
 
 set tabstop=4
