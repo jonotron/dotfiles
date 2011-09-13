@@ -42,3 +42,6 @@ set directory=~/.vim/backup
 
 " enable twig highlighting
 au BufRead,BufNewFile *.twig set syntax=htmljinja
+
+" enable less.css highlighting
+au BufRead,BufNewFile *.less set filetype=less
