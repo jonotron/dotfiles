@@ -22,8 +22,8 @@ autocmd BufEnter * cd %:p:h
 
 set tabstop=2
 set shiftwidth=2
-"set softtabstop=4
-"set expandtab
+set softtabstop=2
+set expandtab
 set hlsearch
 set incsearch
 set number
