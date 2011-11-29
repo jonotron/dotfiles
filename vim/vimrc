@@ -11,6 +11,9 @@ syntax on
 " Autoreload .vimrc if we change it in vim
 autocmd! bufwritepost vimrc source ~/.vimrc
 
+" Set my leader key
+let mapleader = ','
+
 " Escape out of insert mode when jj is pressed
 imap jj <Esc>
 
@@ -22,7 +25,7 @@ map <C-l> <C-w>l
 map <C-q> <C-w>q
 
 " NERDTree key mappings
-nmap ,n :NERDTreeToggle<CR>
+nmap <leader>n :NERDTreeToggle<CR>
 autocmd BufEnter * cd %:p:h
 
 
@@ -51,3 +54,7 @@ au BufRead,BufNewFile *.twig set syntax=htmljinja
 
 " enable less.css highlighting
 au BufRead,BufNewFile *.less set filetype=less
+
+" enable CloseTag plugin for html/xml like files
+autocmd FileType html,twig,xml let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,twig source ~/.vim/bundle/closetag/plugin/closetag.vim
