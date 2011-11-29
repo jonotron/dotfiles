@@ -1,9 +1,15 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 colorscheme desert
 
 filetype on
 filetype plugin on
 filetype indent on
 syntax on
+
+" Autoreload .vimrc if we change it in vim
+autocmd! bufwritepost vimrc source ~/.vimrc
 
 " Escape out of insert mode when jj is pressed
 imap jj <Esc>
