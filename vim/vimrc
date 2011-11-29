@@ -50,7 +50,7 @@ set splitright
 set ignorecase
 set smartcase
 
-# Hide the toolbar in guivim
+" Hide the toolbar in guivim
 set go-=T
 
 " set .swp files to appear here instead
