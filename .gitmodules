@@ -26,3 +26,6 @@
 [submodule "vim/bundle/javascript.vim"]
 	path = vim/bundle/javascript.vim
 	url = git://github.com/serverhorror/javascript.vim
+[submodule "vim/bundle/Javascript-Indent"]
+	path = vim/bundle/Javascript-Indent
+	url = git://github.com/vim-scripts/JavaScript-Indent
