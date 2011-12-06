@@ -43,3 +43,6 @@
 [submodule "vim/bundle/htmljinja"]
 	path = vim/bundle/htmljinja
 	url = git@github.com:/ocim/htmljinja.vim.git
+[submodule "vim/bundle/vim-less"]
+	path = vim/bundle/vim-less
+	url = git@github.com:/groenewege/vim-less.git

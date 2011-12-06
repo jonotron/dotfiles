@@ -66,3 +66,6 @@ au BufRead,BufNewFile *.less set filetype=less
 " enable CloseTag plugin for html/xml like files
 autocmd FileType html,twig,xml let b:closetag_html_style=1
 autocmd FileType html,xhtml,xml,twig source ~/.vim/bundle/closetag/plugin/closetag.vim
+
+au BufRead,BufNewFile *.twig set syntax=htmljinja
+au BufRead,BufNewFile *.less set filetype=less
