@@ -37,3 +37,9 @@
   ignore = untracked
 	path = vim/bundle/fuzzyfinder
 	url = git://github.com/vim-scripts/FuzzyFinder.git
+[submodule "vim/bundle/Jinja"]
+	path = vim/bundle/Jinja
+	url = git@github.com:/vim-scripts/Jinja.git
+[submodule "vim/bundle/htmljinja"]
+	path = vim/bundle/htmljinja
+	url = git@github.com:/ocim/htmljinja.vim.git
