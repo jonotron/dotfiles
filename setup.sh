@@ -10,6 +10,6 @@ rm ~/.vimrc
 rm ~/.bash_profile
 
 # symlink the new files
-ln -s ~/.dotfiles/.vimrc ~/.vimrc
-ln -s ~/.dotfiles/.vim ~/.vim
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/.dotfiles/vim ~/.vim
 ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
