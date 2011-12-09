@@ -1,0 +1,3 @@
+# ignore some cache files
+--ignore-dir=cache
+--ignore-dir=logs
