@@ -14,3 +14,4 @@ ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/.dotfiles/vim ~/.vim
 ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/.dotfiles/ackrc ~/.ackrc
+ln -s ~/.dotfiles/.bash_aliases ~/.bash_aliases
