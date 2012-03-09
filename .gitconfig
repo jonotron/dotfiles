@@ -1,0 +1,9 @@
+[core]
+	quotepath = false
+[user]
+	name = Jonathan Bowers
+	email = jonotron@gmail.com
+[color]
+	ui = auto
+[push]
+	default = current
