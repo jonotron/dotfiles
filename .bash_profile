@@ -1,3 +1,8 @@
+# setup autocompletion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
@@ -18,6 +23,7 @@ fi
 if [ -f "$HOME/.bash_aliases" ]; then
   . "$HOME/.bash_aliases"
 fi
+
 
 SSHAGENT=/usr/bin/ssh-agent
 SSHAGENTARGS="-s"
@@ -152,4 +158,3 @@ update_prompt() {
 }
 
 PROMPT_COMMAND=update_prompt
-
