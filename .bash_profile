@@ -31,6 +31,10 @@ alias wget="curl -O"
 # Terminal vim solarized color variable
 export TERM="xterm-256color"
 
+#Set some colors
+export CLICOLOR=1
+export LSCOLORS="ExGxFxdxCxDxDxhbadExEx"
+
 #### PS1 customization ####
 NONE="\[\033[0m\]"    # unsets color to term fg color
 
