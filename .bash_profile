@@ -41,6 +41,9 @@ export TERM="xterm-256color"
 export CLICOLOR=1
 export LSCOLORS="ExGxFxdxCxDxDxhbadExEx"
 
+# Z script
+ . `brew --prefix`/etc/profile.d/z.sh
+
 #### PS1 customization ####
 NONE="\[\033[0m\]"    # unsets color to term fg color
 

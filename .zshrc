@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="sorin"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -29,9 +29,15 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git brew cloudapp github heroku node npm osx ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/Users/jonotron/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
+
+# Z script
+. `brew --prefix`/etc/profile.d/z.sh
+ function precmd () {
+  z --add "$(pwd -P)"
+ }
