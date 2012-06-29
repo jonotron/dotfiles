@@ -91,3 +91,10 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
+" Add tabularize support
+if exists(":Tabularize")
+  vmap <leader>a= :Tabularize /=<CR>
+  nmap <leader>a= :Tabularize /=<CR>
+  vmap <leader>a: :Tabularize /:\zs<CR>
+  nmap <leader>a: :Tabularize /:\zs<CR>
+endif
