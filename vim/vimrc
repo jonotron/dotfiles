@@ -33,6 +33,13 @@ map <C-q> <C-w>q
 nmap <leader>n :NERDTreeToggle<CR>
 autocmd BufEnter * cd %:p:h
 
+" Add tabularize support
+if exists(":Tabularize")
+vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a= :Tabularize /=<CR>
+vmap <leader>a: :Tabularize /:<CR>
+nmap <leader>a: :Tabularize /:<CR>
+endif
 
 set tabstop=2
 set shiftwidth=2
@@ -91,10 +98,3 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
-" Add tabularize support
-if exists(":Tabularize")
-  vmap <leader>a= :Tabularize /=<CR>
-  nmap <leader>a= :Tabularize /=<CR>
-  vmap <leader>a: :Tabularize /:\zs<CR>
-  nmap <leader>a: :Tabularize /:\zs<CR>
-endif
