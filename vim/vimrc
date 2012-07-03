@@ -34,12 +34,10 @@ nmap <leader>n :NERDTreeToggle<CR>
 autocmd BufEnter * cd %:p:h
 
 " Add tabularize support
-if exists(":Tabularize")
 vmap <leader>a= :Tabularize /=<CR>
 nmap <leader>a= :Tabularize /=<CR>
 vmap <leader>a: :Tabularize /:<CR>
 nmap <leader>a: :Tabularize /:<CR>
-endif
 
 set tabstop=2
 set shiftwidth=2
