@@ -1,11 +1,14 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=$HOME/.dotfiles/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="sorin"
+
+# vi key bindings for awesomeness
+bindkey -v
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
