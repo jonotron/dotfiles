@@ -7,6 +7,9 @@ ZSH=$HOME/.dotfiles/oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="sorin"
 
+# vi key bindings for awesomeness
+bindkey -v
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
