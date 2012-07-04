@@ -15,3 +15,6 @@ ln -s ~/.dotfiles/ackrc ~/.ackrc
 ln -s ~/.dotfiles/.bash_aliases ~/.bash_aliases
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
+
+# change shell to zsh
+chsh -s /bin/zsh
