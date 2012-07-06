@@ -71,6 +71,9 @@ au BufRead,BufNewFile *.less set filetype=less
 " set javascript highlighting for json files
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
+" set handlebars for .hbs
+au BufRead,BufNewFile *.hbs set ft=handlebars
+
 " enable CloseTag plugin for html/xml like files
 autocmd FileType html,twig,xml,handlebars let b:closetag_html_style=1
 autocmd FileType html,xhtml,xml,twig,handlebars source ~/.vim/bundle/closetag/plugin/closetag.vim
