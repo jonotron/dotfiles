@@ -29,6 +29,9 @@ map <C-h> <C-w>h
 map <C-l> <C-w>l
 map <C-q> <C-w>q
 
+" easily create new tabs
+nmap <leader>t :tabnew<CR>
+
 " NERDTree key mappings
 nmap <leader>n :NERDTreeToggle<CR>
 autocmd BufEnter * cd %:p:h
