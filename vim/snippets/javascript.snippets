@@ -1,0 +1,14 @@
+snippet define
+	define(function(require) {
+		${1}	
+	});
+snippet vreq
+	var ${1:module} = require('${2:path}')${3:,}
+snippet req
+	${1:module} = require('${2:path}')${3:,}
+snippet bbView
+	var ${1:view} = ${2:Backbone.View}.extend({
+		${3}		
+	});
+	
+	return $1;
