@@ -22,6 +22,9 @@ let mapleader = ','
 " Escape out of insert mode when jj is pressed
 imap jj <Esc>
 
+" Enable mouse support in terminal mode
+set mouse=a
+
 " Window key mappings
 map <C-j> <C-w>j
 map <C-k> <C-w>k
