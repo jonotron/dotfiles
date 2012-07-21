@@ -25,7 +25,7 @@ if [ -f "$HOME/.bash_aliases" ]; then
 fi
 
 # vim bindings
-set -o vi
+bindkey -v
 
 SSHAGENT=/usr/bin/ssh-agent
 SSHAGENTARGS="-s"
