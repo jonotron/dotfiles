@@ -8,7 +8,8 @@ ZSH=$HOME/.dotfiles/oh-my-zsh
 ZSH_THEME="sorin"
 
 # vi key bindings for awesomeness
-set -o vi
+#set -o vi
+bindkey -v
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"

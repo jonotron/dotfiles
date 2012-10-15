@@ -1,5 +1,6 @@
 [core]
 	quotepath = false
+  editor = vim
 [user]
 	name = Jonathan Bowers
 	email = jonotron@gmail.com
