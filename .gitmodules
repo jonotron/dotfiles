@@ -66,3 +66,6 @@
 [submodule "vendors/rupa/z"]
 	path = vendors/rupa/z
 	url = https://github.com/rupa/z.git
+[submodule "vendors/pangloss/vim-javascript"]
+	path = vendors/pangloss/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
