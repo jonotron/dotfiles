@@ -41,4 +41,4 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/Users/jonotron/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
 
 # Z script
-. vendors/rupa/z/z.sh
+. $HOME/.dotfiles/vendors/rupa/z/z.sh
