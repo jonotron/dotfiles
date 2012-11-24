@@ -23,9 +23,6 @@
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/bundle/javascript.vim"]
-	path = vim/bundle/javascript.vim
-	url = git://github.com/serverhorror/javascript.vim
 [submodule "vim/bundle/Javascript-Indent"]
 	path = vim/bundle/Javascript-Indent
 	url = git://github.com/vim-scripts/JavaScript-Indent
@@ -66,3 +63,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "vendors/rupa/z"]
+	path = vendors/rupa/z
+	url = https://github.com/rupa/z.git
