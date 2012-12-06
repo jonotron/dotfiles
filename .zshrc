@@ -7,10 +7,6 @@ ZSH=$HOME/.dotfiles/oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="sorin"
 
-# vi key bindings for awesomeness
-#set -o vi
-bindkey -v
-
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -36,6 +32,10 @@ bindkey -v
 plugins=(git brew cloudapp github heroku node npm osx)
 
 source $ZSH/oh-my-zsh.sh
+
+# vi key bindings for awesomeness
+#set -o vi
+bindkey -v
 
 # Customize to your needs...
 export PATH=/Users/jonotron/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
