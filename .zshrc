@@ -41,7 +41,4 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/Users/jonotron/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
 
 # Z script
-. `brew --prefix`/etc/profile.d/z.sh
- function precmd () {
-  z --add "$(pwd -P)"
- }
+. $HOME/.dotfiles/vendors/rupa/z/z.sh

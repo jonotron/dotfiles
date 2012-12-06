@@ -33,7 +33,7 @@ map <C-l> <C-w>l
 map <C-q> <C-w>q
 
 " :W<CR> should be an alias to :w<CR>
-cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+command W w
 
 " easily create new tabs
 nmap <leader>t :tabnew<CR>
