@@ -69,3 +69,6 @@
 [submodule "vendors/pangloss/vim-javascript"]
 	path = vendors/pangloss/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/ack.vim"]
+	path = vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim
