@@ -4,6 +4,3 @@
 [submodule "vendors/rupa/z"]
 	path = vendors/rupa/z
 	url = https://github.com/rupa/z.git
-[submodule "vim/bundle/vundle"]
-	path = vim/bundle/vundle
-	url = https://github.com/gmarik/vundle.git
