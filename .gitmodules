@@ -1,74 +1,9 @@
-[submodule "vendors/pathogen"]
-	path = vendors/pathogen
-	url = git://github.com/tpope/vim-pathogen.git
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree
-[submodule "vim/bundle/delimitmate"]
-	path = vim/bundle/delimitmate
-	url = git://github.com/Raimondi/delimitMate.git
-[submodule "vim/bundle/closetag"]
-	path = vim/bundle/closetag
-	url = git://github.com/docunext/closetag.vim.git
-[submodule "vim/bundle/solarized"]
-	path = vim/bundle/solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/fugitive"]
-  path = vim/bundle/fugitive
-	url = git://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/snipmate"]
-  ignore = untracked
-	path = vim/bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
-[submodule "vim/bundle/nerdcommenter"]
-	path = vim/bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/bundle/Javascript-Indent"]
-	path = vim/bundle/Javascript-Indent
-	url = git://github.com/vim-scripts/JavaScript-Indent
-[submodule "vim/bundle/L9"]
-  ignore = untracked
-	path = vim/bundle/L9
-	url = git://github.com/vim-scripts/L9.git
-[submodule "vim/bundle/Jinja"]
-	path = vim/bundle/Jinja
-	url = git@github.com:/vim-scripts/Jinja.git
-[submodule "vim/bundle/htmljinja"]
-	path = vim/bundle/htmljinja
-	url = git@github.com:/ocim/htmljinja.vim.git
-[submodule "vim/bundle/vim-less"]
-	path = vim/bundle/vim-less
-	url = git@github.com:/groenewege/vim-less.git
-[submodule "vim/bundle/ctrlp.vim"]
-	path = vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/bundle/tabular"]
-	path = vim/bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vim/bundle/sparkup"]
-	path = vim/bundle/sparkup
-	url = https://github.com/rstacruz/sparkup.git
-[submodule "vim/bundle/vim-handlebars"]
-	path = vim/bundle/vim-handlebars
-	url = https://github.com/nono/vim-handlebars
-[submodule "vim/bundle/vim-easymotion"]
-	path = vim/bundle/vim-easymotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule "vim/bundle/vim-surround"]
-	path = vim/bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/bundle/syntastic"]
-	path = vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "vendors/rupa/z"]
 	path = vendors/rupa/z
 	url = https://github.com/rupa/z.git
-[submodule "vendors/pangloss/vim-javascript"]
-	path = vendors/pangloss/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "vim/bundle/ack.vim"]
-	path = vim/bundle/ack.vim
-	url = https://github.com/mileszs/ack.vim
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git

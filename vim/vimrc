@@ -1,5 +1,40 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set nocompatible               " be iMproved
+filetype off                   " required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+" General
+Bundle 'scrooloose/nerdtree'
+Bundle 'Raimondi/delimitMate'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'kien/ctrlp.vim'
+Bundle 'godlygeek/tabular'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/syntastic'
+
+" Auto complete and snippets
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/snipmate-snippets'
+Bundle "garbas/vim-snipmate"
+Bundle 'ervandew/supertab'
+
+" HTML
+Bundle 'docunext/closetag.vim'
+Bundle 'rstacruz/sparkup'
+
+" Javascript
+Bundle 'vim-scripts/JavaScript-Indent'
+Bundle 'vim-scripts/L9'
+Bundle 'groenewege/vim-less'
+Bundle 'nono/vim-handlebars'
+Bundle 'pangloss/vim-javascript'
 
 set background=dark
 let g:solarized_termtrans=1
