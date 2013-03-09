@@ -4,3 +4,6 @@
 [submodule "vendors/rupa/z"]
 	path = vendors/rupa/z
 	url = https://github.com/rupa/z.git
+[submodule "vendors/gmarik/vundle"]
+	path = vendors/gmarik/vundle
+	url = https://github.com/gmarik/vundle.git
