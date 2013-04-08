@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # remove old configs
-rmdir ~/.vim
 rm ~/.vimrc
 rm ~/.bash_profile
 rm ~/.gitconfig
