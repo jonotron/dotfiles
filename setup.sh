@@ -13,6 +13,7 @@ ln -is ~/dotfiles/.zshrc ~/.zshrc
 
 mkdir -p ~/.vim/backup
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/rupa/z.git ~/dotfiles/vendors/rupa/z
 vim +BundleInstall +qall
 
 # change shell to zsh
