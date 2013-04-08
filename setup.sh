@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# remove old configs
-rm ~/.vimrc
-rm ~/.bash_profile
-rm ~/.gitconfig
-rm ~/.zshrc
+# install oh-my-zsh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 # symlink the new files
-ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
-ln -s ~/.dotfiles/vim ~/.vim
-ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/.dotfiles/ackrc ~/.ackrc
-ln -s ~/.dotfiles/.bash_aliases ~/.bash_aliases
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -is ~/dotfiles/.vimrc ~/.vimrc
+ln -is ~/dotfiles/.bash_profile ~/.bash_profile
+ln -is ~/dotfiles/.ackrc ~/.ackrc
+ln -is ~/dotfiles/.bash_aliases ~/.bash_aliases
+ln -is ~/dotfiles/.gitconfig ~/.gitconfig
+ln -is ~/dotfiles/.zshrc ~/.zshrc
+
+mkdir -p ~/.vim/backup
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+vim +BundleInstall +qall
 
 # change shell to zsh
 chsh -s /bin/zsh

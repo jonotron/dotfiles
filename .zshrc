@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.dotfiles/oh-my-zsh
+ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -41,4 +41,4 @@ bindkey -v
 export PATH=/Users/jonotron/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
 
 # Z script
-. $HOME/.dotfiles/vendors/rupa/z/z.sh
+. $HOME/dotfiles/vendors/rupa/z/z.sh

@@ -1,6 +1,6 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
-set rtp+=~/.dotfiles/vendors/gmarik/vundle/
+set rtp+=~/dotfiles/vendors/gmarik/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
