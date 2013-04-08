@@ -1,9 +1,0 @@
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vendors/rupa/z"]
-	path = vendors/rupa/z
-	url = https://github.com/rupa/z.git
-[submodule "vendors/gmarik/vundle"]
-	path = vendors/gmarik/vundle
-	url = https://github.com/gmarik/vundle.git
