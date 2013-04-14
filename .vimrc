@@ -85,6 +85,11 @@ nmap <leader>a: :Tabularize /:<CR>
 vmap <leader>a, :Tabularize /,\zs<CR>
 nmap <leader>a, :Tabularize /,\zs<CR>
 
+" Remap supertab keys
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'
+
+" Various config options
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
