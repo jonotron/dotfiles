@@ -132,7 +132,7 @@ au BufRead,BufNewFile *.less  set filetype=less
 
 " Set ignores for ctrlp
 let g:ctrlp_custom_ignore = {
-  \'dir': '\.git$\|\.hg$\|\.svn$\|cache\|vendor\|logs\|build\|node_modules',
+  \'dir': '\.git$\|\.hg$\|\.svn$\|cache\|vendor\|logs\|build\|node_modules\|components',
   \'file': '\.swp$\|\.exe$\|\.so$\|\.dll$\|\.swo$\|\.lock$\|\.gitignore$\|\.project$'
   \}
 " set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/vendor/*,*/cache/*,*/logs/*
