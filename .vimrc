@@ -122,7 +122,7 @@ au BufRead,BufNewFile *.hbs set ft=handlebars
 
 " enable CloseTag plugin for html/xml like files
 autocmd FileType html,twig,xml,handlebars let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,twig,handlebars source ~/.vim/bundle/closetag/plugin/closetag.vim
+autocmd FileType html,xhtml,xml,twig,handlebars source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
 " enable Sparkup plugin for html/xml like files
 au FileType html,xhtml,xml,twig,handlebars source ~/.vim/bundle/sparkup/vim/ftplugin/html/sparkup.vim
