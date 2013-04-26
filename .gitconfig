@@ -1,6 +1,7 @@
 [core]
 	quotepath = false
   editor = vim
+  autocrlf = input
 [user]
 	name = Jonathan Bowers
 	email = jonotron@gmail.com
