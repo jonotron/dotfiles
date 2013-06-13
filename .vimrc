@@ -37,6 +37,12 @@ Bundle 'groenewege/vim-less'
 Bundle 'nono/vim-handlebars'
 Bundle 'pangloss/vim-javascript'
 
+" Markdown
+Bundle 'plasticboy/vim-markdown'
+
+" Don't fold markdown
+let g:vim_markdown_folding_disabled=1
+
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
