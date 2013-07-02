@@ -48,3 +48,6 @@ export PATH=/Users/jonotron/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/us
 
 # Z script
 . $HOME/dotfiles/vendors/rupa/z/z.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
