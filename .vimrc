@@ -18,6 +18,7 @@ Bundle 'scrooloose/syntastic'
 
 " Dependency Bundles
 Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
 
 " Auto complete and snippets
 Bundle 'Shougo/neocomplcache'
