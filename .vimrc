@@ -15,6 +15,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
+Bundle 'mileszs/ack.vim'
 
 " Dependency Bundles
 Bundle 'MarcWeber/vim-addon-mw-utils'
