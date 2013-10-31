@@ -144,6 +144,9 @@ let g:ctrlp_custom_ignore = {
   \}
 " set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/vendor/*,*/cache/*,*/logs/*
 
+" don't error on angular propertys
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+
 " auto set cursorline
 autocmd WinLeave * set nocursorline
 autocmd WinEnter * set cursorline
