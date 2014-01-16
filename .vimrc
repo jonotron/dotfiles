@@ -15,12 +15,15 @@ Bundle 'godlygeek/tabular'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
+Bundle 'mileszs/ack.vim'
+
+" Dependency Bundles
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
 
 " Auto complete and snippets
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 Bundle 'jonotron/snippets'
@@ -31,8 +34,6 @@ Bundle 'docunext/closetag.vim'
 Bundle 'rstacruz/sparkup'
 
 " Javascript
-Bundle 'vim-scripts/JavaScript-Indent'
-Bundle 'vim-scripts/L9'
 Bundle 'groenewege/vim-less'
 Bundle 'nono/vim-handlebars'
 Bundle 'pangloss/vim-javascript'
@@ -85,10 +86,10 @@ nmap <leader>n :NERDTreeToggle<CR>
 autocmd BufEnter * cd %:p:h
 
 " Add tabularize support
-vmap <leader>a= :Tabularize /=<CR>
-nmap <leader>a= :Tabularize /=<CR>
-vmap <leader>a: :Tabularize /:<CR>
-nmap <leader>a: :Tabularize /:<CR>
+vmap <leader>a= :Tabularize /=\zs<CR>
+nmap <leader>a= :Tabularize /=\zs<CR>
+vmap <leader>a: :Tabularize /:\zs<CR>
+nmap <leader>a: :Tabularize /:\zs<CR>
 vmap <leader>a, :Tabularize /,\zs<CR>
 nmap <leader>a, :Tabularize /,\zs<CR>
 
@@ -120,9 +121,6 @@ set go-=T
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-" enable twig highlighting
-au BufRead,BufNewFile *.twig set syntax=htmljinja
-
 " enable less.css highlighting
 au BufRead,BufNewFile *.less set filetype=less
 
@@ -133,14 +131,11 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.hbs set ft=handlebars
 
 " enable CloseTag plugin for html/xml like files
-autocmd FileType html,twig,xml,handlebars let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,twig,handlebars source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
+autocmd FileType html,xml,handlebars let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,handlebars source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
 " enable Sparkup plugin for html/xml like files
-au FileType html,xhtml,xml,twig,handlebars source ~/.vim/bundle/sparkup/vim/ftplugin/html/sparkup.vim
-
-au BufRead,BufNewFile *.twig  set syntax=htmljinja
-au BufRead,BufNewFile *.less  set filetype=less
+au FileType html,xhtml,xml,handlebars source ~/.vim/bundle/sparkup/vim/ftplugin/html/sparkup.vim
 
 " Set ignores for ctrlp
 let g:ctrlp_custom_ignore = {
@@ -148,6 +143,9 @@ let g:ctrlp_custom_ignore = {
   \'file': '\.swp$\|\.exe$\|\.so$\|\.dll$\|\.swo$\|\.lock$\|\.gitignore$\|\.project$'
   \}
 " set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/vendor/*,*/cache/*,*/logs/*
+
+" don't error on angular propertys
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 " auto set cursorline
 autocmd WinLeave * set nocursorline
