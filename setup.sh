@@ -10,6 +10,8 @@ ln -is ~/dotfiles/.ackrc ~/.ackrc
 ln -is ~/dotfiles/.bash_aliases ~/.bash_aliases
 ln -is ~/dotfiles/.gitconfig ~/.gitconfig
 ln -is ~/dotfiles/.zshrc ~/.zshrc
+ln -is ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -is ~/dotfiles/.jshintrc ~/.jshintrc
 
 # setup vim
 mkdir -p ~/.vim/backup
