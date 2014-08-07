@@ -81,8 +81,7 @@ command W w
 " easily create new tabs
 nmap <leader>t :tabnew<CR>
 
-" NERDTree key mappings
-nmap <leader>n :NERDTreeToggle<CR>
+" Set cwd when to dir as file when opened in buffer
 autocmd BufEnter * cd %:p:h
 
 " Add tabularize support
