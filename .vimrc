@@ -163,3 +163,6 @@ inoremap <right> <nop>
 
 " easily turn off highlighting
 nnoremap <leader><space> :noh<cr>
+
+" highlight 80char colum
+set colorcolumn=80
