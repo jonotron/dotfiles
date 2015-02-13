@@ -32,6 +32,7 @@ Bundle 'ervandew/supertab'
 " HTML
 Bundle 'docunext/closetag.vim'
 Bundle 'rstacruz/sparkup'
+Bundle 'gregsexton/MatchTag'
 
 " Javascript
 Bundle 'groenewege/vim-less'
@@ -85,8 +86,8 @@ nmap <leader>t :tabnew<CR>
 autocmd BufEnter * cd %:p:h
 
 " Add tabularize support
-vmap <leader>a= :Tabularize /=\zs<CR>
-nmap <leader>a= :Tabularize /=\zs<CR>
+vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a= :Tabularize /=<CR>
 vmap <leader>a: :Tabularize /:\zs<CR>
 nmap <leader>a: :Tabularize /:\zs<CR>
 vmap <leader>a, :Tabularize /,\zs<CR>
