@@ -17,6 +17,9 @@ ZSH_THEME="sorin"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# lenv loads ENV vars from .env
+alias lenv='env $(cat .env | xargs)'
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
