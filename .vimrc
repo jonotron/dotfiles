@@ -58,7 +58,7 @@ filetype indent on
 syntax on
 
 " Autoreload .vimrc if we change it in vim
-autocmd! bufwritepost vimrc source ~/.vimrc
+autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 " Set my leader key
 let mapleader = ','
@@ -77,7 +77,7 @@ map <C-l> <C-w>l
 map <C-q> <C-w>q
 
 " :W<CR> should be an alias to :w<CR>
-command W w
+command! W w
 
 " easily create new tabs
 nmap <leader>t :tabnew<CR>
@@ -167,3 +167,7 @@ nnoremap <leader><space> :noh<cr>
 
 " highlight 80char colum
 set colorcolumn=80
+
+" reload snippets when edited
+autocmd BufWritePost *.snip,*.snippets
+  \ call neosnippet#variables#set_snippets({})
