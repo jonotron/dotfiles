@@ -22,8 +22,9 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 
 " Auto complete and snippets
-Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neocomplete'
 Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 Bundle 'jonotron/snippets'
@@ -35,12 +36,24 @@ Bundle 'rstacruz/sparkup'
 Bundle 'gregsexton/MatchTag'
 
 " Javascript
-Bundle 'groenewege/vim-less'
+"Bundle 'groenewege/vim-less'
 Bundle 'nono/vim-handlebars'
-Bundle 'pangloss/vim-javascript'
+"Bundle 'pangloss/vim-javascript'
+Bundle 'othree/yajs.vim'
+"Bundle 'jelera/vim-javascript-syntax'
+Bundle 'mxw/vim-jsx'
+Bundle 'gavocanov/vim-js-indent'
 
 " Markdown
 Bundle 'plasticboy/vim-markdown'
+
+" Git
+Bundle 'airblade/vim-gitgutter'
+
+" NERDTree config
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 " Don't fold markdown
 let g:vim_markdown_folding_disabled=1
@@ -104,9 +117,8 @@ set softtabstop=2
 set expandtab
 set hlsearch
 set incsearch
-set number
-set autoindent
-set smartindent
+" set autoindent
+" set smartindent
 set showmatch
 
 set splitbelow
@@ -133,6 +145,9 @@ au BufRead,BufNewFile *.hbs set ft=handlebars
 " enable CloseTag plugin for html/xml like files
 autocmd FileType html,xml,handlebars let b:closetag_html_style=1
 autocmd FileType html,xhtml,xml,handlebars source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
+
+" enable JSX syntax highlighting in .js files
+let g:jsx_ext_required = 0
 
 " enable Sparkup plugin for html/xml like files
 au FileType html,xhtml,xml,handlebars source ~/.vim/bundle/sparkup/vim/ftplugin/html/sparkup.vim
@@ -161,6 +176,11 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" set relative line numbers
+" set relativenumber
+" set absolute line numbers
+" set number
 
 " easily turn off highlighting
 nnoremap <leader><space> :noh<cr>
