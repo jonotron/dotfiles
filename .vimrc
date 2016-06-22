@@ -25,7 +25,6 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'Shougo/neocomplete'
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
-Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 Bundle 'jonotron/snippets'
 Bundle 'ervandew/supertab'
@@ -43,6 +42,9 @@ Bundle 'othree/yajs.vim'
 "Bundle 'jelera/vim-javascript-syntax'
 Bundle 'mxw/vim-jsx'
 Bundle 'gavocanov/vim-js-indent'
+
+" jison
+Bundle 'wizicer/vim-jison'
 
 " Markdown
 Bundle 'plasticboy/vim-markdown'
