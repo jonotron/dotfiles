@@ -5,6 +5,7 @@
 [user]
 	name = Jonathan Bowers
 	email = jonotron@gmail.com
+	signingkey = B6B05838
 [color]
 	ui = auto
 [push]
@@ -20,3 +21,5 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[commit]
+	gpgsign = true
