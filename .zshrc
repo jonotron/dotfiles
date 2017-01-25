@@ -22,6 +22,12 @@ ZSH_THEME="avit"
 # lenv loads ENV vars from .env
 alias lenv='env $(cat .env | xargs)'
 
+dockerEnv() {
+  echo "docker-machine $1"
+  eval $(docker-machine env $1)
+}
+alias denv=dockerEnv
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
