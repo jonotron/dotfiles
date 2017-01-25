@@ -12,6 +12,7 @@ ln -is ~/dotfiles/.gitconfig ~/.gitconfig
 ln -is ~/dotfiles/.zshrc ~/.zshrc
 ln -is ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -is ~/dotfiles/.jshintrc ~/.jshintrc
+ln -is ~/dotfiles/.hyper.js ~/.hyper.js
 
 # setup vim
 mkdir -p ~/.vim/backup
