@@ -55,7 +55,24 @@ module.exports = {
   //   `hypersolar`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+    'hypercwd',
+    'hyperlinks',
+    //'hyperline', // this is too distracting
+    'hyper-statusline',
+    'hyperterm-1password',
+
+    'hyperterm-cursor',
+    'hyperterm-tab-icons',
+
+    //'hyperpunk',
+    //'hyperterm-hybrid',
+    //'hyperambient', // auto change from solarized dark/light based on ambient light
+
+    'hyperterm-solarized-dark',
+    //'hyper-snazzy',
+
+  ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
