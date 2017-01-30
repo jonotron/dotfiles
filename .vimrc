@@ -230,7 +230,8 @@ endfunction
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+" Check if popup is visible otherwise use delmitmate bs
+inoremap <expr><BS> pumvisible() ? neocomplete#smart_close_popup()."\<C-h>" : delimitMate#BS()
 " Close popup by <Space>.
 "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 
