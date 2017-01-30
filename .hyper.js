@@ -59,7 +59,7 @@ module.exports = {
     'hypercwd',
     'hyperlinks',
     //'hyperline', // this is too distracting
-    'hyper-statusline',
+    //'hyper-statusline',
     'hyperterm-1password',
 
     'hyperterm-cursor',
@@ -71,6 +71,8 @@ module.exports = {
 
     'hyperterm-solarized-dark',
     //'hyper-snazzy',
+    
+    //'hyperpower',
 
   ],
 
