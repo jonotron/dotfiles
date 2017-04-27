@@ -44,6 +44,9 @@ Bundle 'othree/es.next.syntax.vim'
 Bundle 'mxw/vim-jsx'
 Bundle 'gavocanov/vim-js-indent'
 
+" JSON
+Bundle 'elzr/vim-json'
+
 " jison
 Bundle 'wizicer/vim-jison'
 
@@ -60,6 +63,9 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 " Don't fold markdown
 let g:vim_markdown_folding_disabled=1
+
+" Don't conceal markdown
+let g:vim_markdown_conceal = 0
 
 set background=dark
 let g:solarized_termtrans=1
@@ -138,9 +144,6 @@ set directory=~/.vim/backup
 
 " enable less.css highlighting
 au BufRead,BufNewFile *.less set filetype=less
-
-" set javascript highlighting for json files
-autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " set handlebars for .hbs
 au BufRead,BufNewFile *.hbs set ft=handlebars
