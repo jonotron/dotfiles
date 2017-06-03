@@ -33,6 +33,7 @@ Bundle 'ervandew/supertab'
 Bundle 'docunext/closetag.vim'
 Bundle 'rstacruz/sparkup'
 Bundle 'gregsexton/MatchTag'
+"Bundle 'mattn/emmet-vim'
 
 " Javascript
 "Bundle 'groenewege/vim-less'
@@ -157,6 +158,9 @@ let g:jsx_ext_required = 0
 
 " enable Sparkup plugin for html/xml like files
 au FileType html,xhtml,xml,handlebars source ~/.vim/bundle/sparkup/vim/ftplugin/html/sparkup.vim
+
+" enable Sparkup for jsx
+autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
 
 " Set ignores for ctrlp
 let g:ctrlp_custom_ignore = {
