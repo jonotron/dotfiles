@@ -21,7 +21,7 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 
 " Auto complete and snippets
-Plug 'Shougo/neocomplete'
+"Plug 'Shougo/neocomplete'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'garbas/vim-snipmate'
@@ -58,63 +58,6 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
-" Old Vundle config
-"set rtp+=~/.vim/bundle/vundle/
-"call vundle#rc()
-"Bundle 'gmarik/vundle'
-
-"" General
-"Bundle 'scrooloose/nerdtree'
-"Bundle 'Raimondi/delimitMate'
-"Bundle 'altercation/vim-colors-solarized'
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'scrooloose/nerdcommenter'
-"Bundle 'kien/ctrlp.vim'
-"Bundle 'godlygeek/tabular'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'tpope/vim-surround'
-"Bundle 'scrooloose/syntastic'
-"Bundle 'mileszs/ack.vim'
-
-"" Dependency Bundles
-"Bundle 'MarcWeber/vim-addon-mw-utils'
-"Bundle 'tomtom/tlib_vim'
-
-"" Auto complete and snippets
-"Bundle 'Shougo/neocomplete'
-"Bundle 'Shougo/neosnippet'
-"Bundle 'Shougo/neosnippet-snippets'
-"Bundle 'garbas/vim-snipmate'
-"Bundle 'jonotron/snippets'
-"Bundle 'ervandew/supertab'
-
-"" HTML
-"Bundle 'docunext/closetag.vim'
-"Bundle 'rstacruz/sparkup'
-"Bundle 'gregsexton/MatchTag'
-""Bundle 'mattn/emmet-vim'
-
-"" Javascript
-""Bundle 'groenewege/vim-less'
-"Bundle 'nono/vim-handlebars'
-""Bundle 'pangloss/vim-javascript'
-"Bundle 'othree/yajs.vim'
-"Bundle 'othree/es.next.syntax.vim'
-""Bundle 'jelera/vim-javascript-syntax'
-"Bundle 'mxw/vim-jsx'
-"Bundle 'gavocanov/vim-js-indent'
-
-"" JSON
-"Bundle 'elzr/vim-json'
-
-"" jison
-"Bundle 'wizicer/vim-jison'
-
-"" Markdown
-"Bundle 'plasticboy/vim-markdown'
-
-"" Git
-"Bundle 'airblade/vim-gitgutter'
 
 " NERDTree config
 let g:NERDTreeDirArrows = 1

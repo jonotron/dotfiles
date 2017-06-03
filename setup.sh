@@ -16,11 +16,10 @@ ln -is ~/dotfiles/.hyper.js ~/.hyper.js
 
 # setup vim
 mkdir -p ~/.vim/backup
-#git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-#vim +BundleInstall +qall
 mkdir -p ~/.vim/autoload
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
 
 # setup z
 git clone https://github.com/rupa/z.git ~/dotfiles/vendors/rupa/z
