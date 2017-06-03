@@ -1,61 +1,120 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+call plug#begin('~/.vim/plugged')
 
 " General
-Bundle 'scrooloose/nerdtree'
-Bundle 'Raimondi/delimitMate'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'kien/ctrlp.vim'
-Bundle 'godlygeek/tabular'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
-Bundle 'mileszs/ack.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Raimondi/delimitMate'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
+Plug 'kien/ctrlp.vim'
+Plug 'godlygeek/tabular'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'mileszs/ack.vim'
 
-" Dependency Bundles
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
+" Dependency plugs
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
 
 " Auto complete and snippets
-Bundle 'Shougo/neocomplete'
-Bundle 'Shougo/neosnippet'
-Bundle 'Shougo/neosnippet-snippets'
-Bundle 'garbas/vim-snipmate'
-Bundle 'jonotron/snippets'
-Bundle 'ervandew/supertab'
+Plug 'Shougo/neocomplete'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'garbas/vim-snipmate'
+Plug 'jonotron/snippets'
+Plug 'ervandew/supertab'
 
 " HTML
-Bundle 'docunext/closetag.vim'
-Bundle 'rstacruz/sparkup'
-Bundle 'gregsexton/MatchTag'
-"Bundle 'mattn/emmet-vim'
+Plug 'docunext/closetag.vim'
+Plug 'rstacruz/sparkup'
+Plug 'gregsexton/MatchTag'
+"Plug 'mattn/emmet-vim'
 
 " Javascript
-"Bundle 'groenewege/vim-less'
-Bundle 'nono/vim-handlebars'
-"Bundle 'pangloss/vim-javascript'
-Bundle 'othree/yajs.vim'
-Bundle 'othree/es.next.syntax.vim'
-"Bundle 'jelera/vim-javascript-syntax'
-Bundle 'mxw/vim-jsx'
-Bundle 'gavocanov/vim-js-indent'
+"Plug 'groenewege/vim-less'
+Plug 'nono/vim-handlebars'
+"Plug 'pangloss/vim-javascript'
+Plug 'othree/yajs.vim'
+Plug 'othree/es.next.syntax.vim'
+"Plug 'jelera/vim-javascript-syntax'
+Plug 'mxw/vim-jsx'
+Plug 'gavocanov/vim-js-indent'
 
 " JSON
-Bundle 'elzr/vim-json'
+Plug 'elzr/vim-json'
 
 " jison
-Bundle 'wizicer/vim-jison'
+Plug 'wizicer/vim-jison'
 
 " Markdown
-Bundle 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 
 " Git
-Bundle 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
+
+call plug#end()
+
+" Old Vundle config
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
+"Bundle 'gmarik/vundle'
+
+"" General
+"Bundle 'scrooloose/nerdtree'
+"Bundle 'Raimondi/delimitMate'
+"Bundle 'altercation/vim-colors-solarized'
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'scrooloose/nerdcommenter'
+"Bundle 'kien/ctrlp.vim'
+"Bundle 'godlygeek/tabular'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'tpope/vim-surround'
+"Bundle 'scrooloose/syntastic'
+"Bundle 'mileszs/ack.vim'
+
+"" Dependency Bundles
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'tomtom/tlib_vim'
+
+"" Auto complete and snippets
+"Bundle 'Shougo/neocomplete'
+"Bundle 'Shougo/neosnippet'
+"Bundle 'Shougo/neosnippet-snippets'
+"Bundle 'garbas/vim-snipmate'
+"Bundle 'jonotron/snippets'
+"Bundle 'ervandew/supertab'
+
+"" HTML
+"Bundle 'docunext/closetag.vim'
+"Bundle 'rstacruz/sparkup'
+"Bundle 'gregsexton/MatchTag'
+""Bundle 'mattn/emmet-vim'
+
+"" Javascript
+""Bundle 'groenewege/vim-less'
+"Bundle 'nono/vim-handlebars'
+""Bundle 'pangloss/vim-javascript'
+"Bundle 'othree/yajs.vim'
+"Bundle 'othree/es.next.syntax.vim'
+""Bundle 'jelera/vim-javascript-syntax'
+"Bundle 'mxw/vim-jsx'
+"Bundle 'gavocanov/vim-js-indent'
+
+"" JSON
+"Bundle 'elzr/vim-json'
+
+"" jison
+"Bundle 'wizicer/vim-jison'
+
+"" Markdown
+"Bundle 'plasticboy/vim-markdown'
+
+"" Git
+"Bundle 'airblade/vim-gitgutter'
 
 " NERDTree config
 let g:NERDTreeDirArrows = 1
