@@ -71,8 +71,8 @@ module.exports = {
     //'hyperterm-hybrid',
     //'hyperambient', // auto change from solarized dark/light based on ambient light
 
-    'hyperterm-solarized-dark',
-    //'hyper-snazzy',
+    //'hyperterm-solarized-dark',
+    'hyper-snazzy',
     
     //'hyperpower',
 
