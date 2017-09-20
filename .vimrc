@@ -3,10 +3,13 @@ filetype off                   " required!
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
+" Install plugins with :PlugInstall
+
 " General
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
-Plug 'Raimondi/delimitMate'
+"Plug 'Raimondi/delimitMate'
+Plug 'jiangmiao/auto-pairs'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
