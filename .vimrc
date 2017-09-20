@@ -170,6 +170,9 @@ au FileType html,xhtml,xml,handlebars source ~/.vim/bundle/sparkup/vim/ftplugin/
 " enable Sparkup for jsx
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
 
+" ctrlp should always use the directory started from as root
+let g:ctrlp_working_path_mode = 0
+
 " Set ignores for ctrlp
 let g:ctrlp_custom_ignore = {
   \'dir': '\.git$\|\.hg$\|\.svn$\|cache\|vendor\|logs\|build\|node_modules\|components\',
