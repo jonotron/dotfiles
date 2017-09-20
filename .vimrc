@@ -42,7 +42,7 @@ Plug 'gregsexton/MatchTag'
 
 " Javascript
 "Plug 'groenewege/vim-less'
-Plug 'nono/vim-handlebars'
+"Plug 'nono/vim-handlebars'
 "Plug 'pangloss/vim-javascript'
 Plug 'othree/yajs.vim'
 Plug 'othree/es.next.syntax.vim'
