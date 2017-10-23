@@ -17,7 +17,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'godlygeek/tabular'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'mileszs/ack.vim'
 
 " Dependency plugs
@@ -49,6 +50,7 @@ Plug 'othree/es.next.syntax.vim'
 "Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
 Plug 'gavocanov/vim-js-indent'
+Plug 'prettier/vim-prettier'
 
 " JSON
 Plug 'elzr/vim-json'
@@ -169,6 +171,11 @@ au FileType html,xhtml,xml,handlebars source ~/.vim/bundle/sparkup/vim/ftplugin/
 
 " enable Sparkup for jsx
 autocmd FileType javascript.jsx runtime! ftplugin/html/sparkup.vim
+
+" Prettier config
+let g:prettier#autoformat = 0
+"let g:prettier#quickfix_enabled = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
 
 " ctrlp should always use the directory started from as root
 let g:ctrlp_working_path_mode = 0
