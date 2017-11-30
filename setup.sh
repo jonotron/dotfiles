@@ -14,6 +14,7 @@ ln -is ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -is ~/dotfiles/.jshintrc ~/.jshintrc
 ln -is ~/dotfiles/.hyper.js ~/.hyper.js
 ln -is ~/dotfiles/.tern-config ~/.tern-config
+ln -is ~/dotfiles/.prettierrc ~/.prettierrc
 
 # setup vim
 mkdir -p ~/.vim/backup
